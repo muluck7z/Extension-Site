@@ -1,3 +1,5 @@
+import { formatCountry } from "../shared/country";
+
 async function sendVisitLog(request: Request): Promise<Response> {
   const webhookUrl = process.env.DISCORD_WEBHOOK_URL?.trim();
   if (!webhookUrl) {
@@ -8,7 +10,7 @@ async function sendVisitLog(request: Request): Promise<Response> {
     });
   }
 
-  const country = request.headers.get("x-vercel-ip-country") ?? "Desconhecido";
+  const country = formatCountry(request.headers.get("x-vercel-ip-country"));
   const timestamp = new Date().toISOString();
 
   try {
