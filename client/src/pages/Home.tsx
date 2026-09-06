@@ -4,23 +4,7 @@
 import { useEffect, useState } from "react";
 import { ChevronDown, Download, ExternalLink, FileArchive } from "lucide-react";
 
-const extensionFile = "/assets/Extension.zip";
 const kiwiBrowserUrl = "https://kiwi-browser.br.uptodown.com/android";
-function notifyExtensionDownload() {
-  const payload = new Blob(["{}"], { type: "application/json" });
-
-  if (typeof navigator !== "undefined" && navigator.sendBeacon?.("/api/download", payload)) {
-    return;
-  }
-
-  void fetch("/api/download", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: "{}",
-    keepalive: true,
-  }).catch(() => undefined);
-}
-
 const tutorials = [
   {
     number: "01",
@@ -78,9 +62,7 @@ export default function Home() {
             </p>
             <a
               className="extension-download-button"
-              href={extensionFile}
-              download="Extension.zip"
-              onClick={notifyExtensionDownload}
+              href="/api/download"
             >
               <Download size={18} strokeWidth={2.6} />
               Download Extension.zip

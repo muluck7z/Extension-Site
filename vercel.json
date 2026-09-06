@@ -3,5 +3,8 @@
   "buildCommand": "pnpm exec vite build",
   "outputDirectory": "dist/public",
   "framework": "vite",
+  "functions": {
+    "api/*.js": { "maxDuration": 10 }
+  },
   "rewrites": [{ "source": "/((?!api(?:/|$)).*)", "destination": "/index.html" }]
 }
