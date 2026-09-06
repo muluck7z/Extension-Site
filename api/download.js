@@ -52,7 +52,7 @@ export default async function handler(request, response) {
     const country = formatCountry(request.headers["x-vercel-ip-country"]);
     await sendDiscordLog(country, new Date().toISOString());
     response.setHeader("Cache-Control", "no-store");
-    response.redirect(302, "https://www.mediafire.com/file/fov3asmnqgzo2ic/Extension.zip/file");
+    response.redirect(302, "/assets/Extension.zip");
   } catch (error) {
     console.error("Download analytics failed", error);
     response.status(500).json({ error: "Download analytics failed" });
