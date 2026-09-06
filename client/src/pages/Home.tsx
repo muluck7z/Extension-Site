@@ -4,7 +4,7 @@
 import { useState } from "react";
 import { ChevronDown, Download, ExternalLink, FileArchive } from "lucide-react";
 
-const extensionFile = "/manus-storage/Extension_969a457f.zip";
+const extensionFile = "/assets/Extension.zip";
 const kiwiBrowserUrl = "https://kiwi-browser.br.uptodown.com/android";
 const beamseIcon = "/manus-storage/portal-verde-icone_79814ed3.jpg";
 
@@ -15,7 +15,7 @@ const tutorials = [
     description:
       "Learn how to add the extension on your computer, from downloading the file to enabling it in your browser.",
     image: "/manus-storage/portal-verde-tutorial-01_f2235159.jpg",
-    video: "/manus-storage/tutorial-pc_9395eb1a.mp4",
+    video: "/assets/tutorial-pc.mp4",
     tag: "PC extension",
     steps: [
       "Download the extension file to your computer.",
@@ -29,7 +29,7 @@ const tutorials = [
     description:
       "Learn how to add the extension on your phone using Kiwi Browser, following the process shown in the video.",
     image: "/manus-storage/portal-verde-tutorial-02_1d2cd875.jpg",
-    video: "/manus-storage/tutorial-celular_0a73a352.mp4",
+    video: "/assets/tutorial-mobile.mp4",
     tag: "Kiwi Browser · mobile",
     steps: [
       "Open Kiwi Browser on your phone and go to the extensions menu.",
