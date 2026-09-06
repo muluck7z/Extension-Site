@@ -73,6 +73,28 @@ export default function Home() {
             <strong>Extension.zip</strong>
             <span>Ready to download</span>
             <small>Use the video below for your device.</small>
+            <div className="download-video-promo">
+              <h2>Quer poder fazer o mesmo?</h2>
+              <p>Veja o que você pode fazer com a extensão.</p>
+              <div className="download-video-grid">
+                <video
+                  src="/assets/download-demo-01.mp4"
+                  controls
+                  playsInline
+                  preload="metadata"
+                  className="download-promo-video"
+                  aria-label="Demonstração 1 da extensão"
+                />
+                <video
+                  src="/assets/download-demo-02.mp4"
+                  controls
+                  playsInline
+                  preload="metadata"
+                  className="download-promo-video"
+                  aria-label="Demonstração 2 da extensão"
+                />
+              </div>
+            </div>
           </div>
         </section>
 

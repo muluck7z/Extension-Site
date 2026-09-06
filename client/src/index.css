@@ -234,6 +234,11 @@ button:not(:disabled), a[href] { cursor: pointer; }
 .extension-card strong { font-family: "Archivo Black", Impact, sans-serif; font-size: 1.65rem; line-height: .95; letter-spacing: -.04em; text-transform: uppercase; }
 .extension-card span { color: #527d0d; font-size: .72rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
 .extension-card small { max-width: 210px; color: #56594f; font-size: .78rem; line-height: 1.45; }
+.download-video-promo { display: grid; gap: .55rem; margin-top: .45rem; padding-top: .85rem; border-top: 2px solid rgba(18, 24, 14, .16); }
+.download-video-promo h2 { margin: 0; font-family: "Archivo Black", Impact, sans-serif; font-size: clamp(1.15rem, 2vw, 1.55rem); line-height: .95; letter-spacing: -.045em; text-transform: uppercase; }
+.download-video-promo p { margin: 0; color: #56594f; font-size: .76rem; line-height: 1.4; }
+.download-video-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .6rem; margin-top: .25rem; }
+.download-promo-video { display: block; width: 100%; aspect-ratio: 9 / 16; min-height: 150px; background: var(--ink); object-fit: cover; }
 
 .content-section { position: relative; padding: clamp(4rem, 8vw, 7.3rem) clamp(1.25rem, 8vw, 8.2rem); }
 .section-top { display: flex; align-items: end; justify-content: space-between; gap: 2rem; margin-bottom: clamp(2.5rem, 5vw, 4.3rem); }
@@ -327,6 +332,8 @@ button:not(:disabled), a[href] { cursor: pointer; }
   .extension-copy h1 { font-size: clamp(2.8rem, 14vw, 4.2rem); }
   .extension-download-button { width: 100%; }
   .extension-card { min-height: 170px; }
+  .download-video-grid { grid-template-columns: 1fr; }
+  .download-promo-video { max-height: 360px; }
   .kiwi-download-card { align-items: stretch; flex-direction: column; }
   .kiwi-download-action { justify-content: center; }
   .footer { flex-direction: column; }
