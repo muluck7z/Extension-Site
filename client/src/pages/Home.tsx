@@ -6,8 +6,6 @@ import { ChevronDown, Download, ExternalLink, FileArchive } from "lucide-react";
 
 const extensionFile = "/assets/Extension.zip";
 const kiwiBrowserUrl = "https://kiwi-browser.br.uptodown.com/android";
-const beamseIcon = "/manus-storage/portal-verde-icone_79814ed3.jpg";
-
 function notifyExtensionDownload() {
   const payload = new Blob(["{}"], { type: "application/json" });
 
@@ -71,12 +69,6 @@ export default function Home() {
   return (
     <div className="site-shell tutorials-page">
       <main>
-        <header className="beamse-header" id="top">
-          <a href="#top" className="beamse-brand" aria-label="Beamse home">
-            <img src={beamseIcon} alt="Beamse icon" />
-            <span>Beamse</span>
-          </a>
-        </header>
         <section className="extension-download" aria-labelledby="extension-title">
           <div className="extension-copy">
             <span className="kicker">Extension package</span>

@@ -221,12 +221,6 @@ button:not(:disabled), a[href] { cursor: pointer; }
 .route-count span { display: inline-flex; align-items: center; justify-content: center; width: 31px; height: 31px; border: 2px solid var(--ink); background: var(--paper); font-size: .69rem; font-weight: 800; }
 .route-count span:last-child { color: var(--paper); background: var(--ink); }
 
-.beamse-header { display: flex; align-items: center; padding: 1rem clamp(1.25rem, 8vw, 8.2rem); color: var(--paper); background: var(--ink); }
-.beamse-brand { display: inline-flex; align-items: center; gap: .75rem; color: var(--paper); text-decoration: none; }
-.beamse-brand img { width: 46px; height: 46px; border: 2px solid var(--lime); object-fit: cover; object-position: 50% 12%; box-shadow: 3px 3px 0 var(--lime); filter: saturate(1.1) contrast(1.05); }
-.beamse-brand span { font-family: "Archivo Black", Impact, sans-serif; font-size: 1.65rem; line-height: 1; letter-spacing: -.05em; }
-.beamse-brand:hover span { color: var(--lime); }
-
 
 .extension-download { position: relative; display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(250px, .65fr); gap: clamp(2rem, 8vw, 7rem); align-items: end; padding: clamp(3.4rem, 6vw, 5.5rem) clamp(1.25rem, 8vw, 8.2rem) clamp(3rem, 6vw, 5rem); color: var(--paper); background: var(--ink); overflow: hidden; }
 .extension-download::after { content: ""; position: absolute; right: -5rem; bottom: -15rem; width: 27rem; height: 27rem; border: 42px solid var(--lime); border-radius: 50%; opacity: .92; }
