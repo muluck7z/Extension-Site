@@ -74,8 +74,8 @@ export default function Home() {
             <span>Ready to download</span>
             <small>Use the video below for your device.</small>
             <div className="download-video-promo">
-              <h2>Quer poder fazer o mesmo?</h2>
-              <p>Veja o que você pode fazer com a extensão.</p>
+              <h2>Want to do the same?</h2>
+              <p>See what you can do with the extension.</p>
               <div className="download-video-grid">
                 <video
                   src="/assets/download-demo-01.mp4"
